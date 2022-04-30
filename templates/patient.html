@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href='static/assets/cd.jpeg'/>  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form id="patientForm" action="/patient" method="post">  
+  <div class="container">  
+  <center>  <h1> Patient Details Form </h1> </center>  
+  <hr>  
+  <label> Name </label>   
+<input type="text" name="name" placeholder= "Name" size="15" required />      
+<div>  
+<label>   
+Age :  
+</label>    
+<input type="text" name="age" id="age" placeholder= "age" size="15" required /> 
+
+</div>    
+<div>  
+<label>   
+Vaccinate with :  
+</label>   
+  
+<label> Vaccine/dose name: </label>   
+<input type="text" name="vaccine" id="vaccine" placeholder= "vaccine name" size="15" required />
+
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="text" name="gender" id="gender" placeholder= "gender" size="3" required /> 
+  
+</div> 
+<label>
+  Aadhar card no(last 4 digits):
+</label>
+<input type="text" name="aadhar_no" id="aadhar_no" placeholder="Aadhar card no" size="4"/ required>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone_no" id="phone_no" placeholder="phone no." size="10"/ required>   
+Current Address :  
+<textarea cols="80" rows="5" name="address" id="address" placeholder="Current Address" value="address" required>  
+</textarea>   
+    <button type="submit" class="registerbtn">Submit</button>    
+</form>  
+</body>  
+</html>  

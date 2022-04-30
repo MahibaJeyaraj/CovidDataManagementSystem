@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>homeremedies/coviddatamgmt</title>
+        <link rel="icon" type="image/x-icon" href='static/assets/cd.jpeg'/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS -->
+        <link href={{ url_for('static', filename="css/styles.css") }} rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/home">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url( {{ url_for('static', filename='assets/img/.jpg' ) }}">
+            <div class="container position-absolute px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Covid Center Details</h1>
+                            <h2 class="subheading">Mentioned are some center names and available vaccine present in that center</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+    </head>
+<br>
+
+<table>
+  <tr>
+    <th>Sr.no</th>
+    <th>Center Name</th>
+    <th>Center type</th>
+    <th>Vaccine available</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Nulife Hospital, GTB Nagar</td>
+    <td>Pvt</td>
+    <td>covishield,covaxin</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Pentamed Hospital, Derawal Nagar</td>
+    <td>Pvt</td>
+    <td>sputnik v, covishield, covaxin</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Bansal Global Hospital, 
+Jahangirpuri</td>
+    <td>Pvt</td>
+    <td>covishield,covaxin</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Gupta 
+Multispecaility 
+Hospital, Bawana</td>
+    <td>pvt</td>
+    <td>covishield,covaxin</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Sant Soham 
+Hospital, Bawana</td>
+    <td>pvt</td>
+    <td>sputnik v, covishield, covaxin</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Mangalam Hospital, 
+Bawan</td>
+    <td>pvt</td>
+    <td>covishield,covaxin</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Maharaja Agarsain 
+Multispeciality 
+Hospital, Narela</td>
+    <td>pvt</td>
+    <td>covaxin,sputnik v</td>
+  </tr>
+  <!--   covaxin,sputnik v,    sputnik v, covishield      -->
+  <tr>
+    <td>8</td>
+    <td>Sunrise Hospital 
+Rohini</td>
+    <td>pvt</td>
+    <td>covishield </td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Bhagwati Hospital</td>
+    <td>pvt</td>
+    <td>covaxin,sputnik v</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>CW A Block 
+Jahangir Puri </td>
+    <td>govt</td>
+    <td>covishield </td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>MCW Baktawarpur</td>
+    <td>govt</td>
+    <td>sputnik v, covishield, covaxin</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>DGD Bhorgarh </td>
+    <td>govt</td>
+    <td>covaxin,sputnik v</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>ESI Hospital Sec-15 
+Rohini -</td>
+    <td>govt</td>
+    <td>covishield </td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Satyawadi Raja 
+Harish Chandra 
+Hospital-1</td>
+    <td>govt</td>
+    <td>covaxin,sputnik v</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Maharishi Valmiki 
+Hospital -4</td>
+    <td>govt</td>
+    <td>sputnik v, covishield, covaxin</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Babu Jagjivan Ram 
+Memorial Hospital</td>
+    <td>govt</td>
+    <td>covishield </td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Babu Jagjivan Ram 
+Memorial Hospital</td>
+    <td>govt</td>
+    <td>covishield </td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>MH Shahbad 
+Daulatpur</td>
+    <td>govt</td>
+    <td>covishield </td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>CGHS Dispensary, 
+Kingsway Camp-1 </td>
+    <td>govt</td>
+    <td>sputnik v, covishield, covaxin</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>darsh multi-speciality hospital 
+and trauma center</td>
+    <td>pvt</td>
+    <td>covishield </td>
+  </tr>
+</table>
+<!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                    
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; covid management Website 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src={{ url_for('static', filename="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js")}}></script>
+        <!-- Core theme JS-->
+        <script src={{ url_for('static', filename="js/scripts.js")}}></script>
+    </body>
+</html>

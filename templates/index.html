@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>COVID DATA MANAGEMENT</title>
+        <link rel="icon" type="image/x-icon" href='static/assets/cd.jpeg'/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS -->
+        <link href={{ url_for('static', filename="css/styles.css") }} rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/stafflogin">Staff login</a></li>
+                                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/query">Queries</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url(  {{ url_for('static', filename='assets/img/covid.jpg' ) }}">
+            <div class="container position-absolute">
+                <div class="site-heading">
+                            <h1>&nbsp&nbsp&nbsp&nbsp COVID DATA</h1>
+                            <span class="subheading">&nbsp&nbsp&nbsp&nbspan initiative for corona prevention</span>
+                            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp wellness,cureness and prevention is our main motto</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+                <p style="font-size:20px;">Hey viewers, we have developed this website so that the user can easily access the current status of covid-19. Here are also some emergency precautions/solutions for some of the common health related issues/disease/problem. some of the center details have also been uploaded in case you'll want to refer, then refer the same. Our website generally focus on viewers benefit. So do support us. If you have any doubt please share with us by clicking the query option.Thankyou for visiting. Following are some of the links, user can visit: </p>
+                    <!--  preview-->
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="/currentcovid">
+                            <h2 class="post-title">Current Covid Count</h2>
+                               <h5 class="post-subtitle">This link provides the latest update of covid count in the world</h5></a>
+
+                     <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="/homeremedies"><h2 class="post-title">Home remedies</h2>
+                            <h5 class="post-subtitle">Illness and its precaution/solution will be provided</h5></a>
+                        
+                    </div>       
+                        
+                    </div>
+                    
+                    <hr class="my-4" />
+                    <div class="post-preview">
+                        <a href="/centerdetails">
+                            <h3 class="post-title">Covid center details</h3>
+                            <h5 class="post-subtitle">Here you can find the number of covid center and available vaccine in that particular center</h5>
+                        </a>
+                        
+                    </div>
+                    
+        </div>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; covid management Website 2022 @mj</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src={{ url_for('static', filename="js/scripts.js") }}></script>
+    </body>
+</html>
